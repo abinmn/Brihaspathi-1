@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/Brihaspathi/static/js/4.8741376d.chunk.js"
   },
   {
-    "revision": "aeaa6b4cb96d279222cc",
+    "revision": "b735ecbbb677b88fe3ab",
     "url": "/Brihaspathi/static/css/main.c60a3a6f.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = [
     "url": "/Brihaspathi/static/media/fontawesome-webfont.912ec66d.svg"
   },
   {
-    "revision": "db9ad6a62ff8cab815c3",
-    "url": "/Brihaspathi/static/js/1.db9ad6a6.chunk.js"
+    "revision": "a8d17f15fdb613154168",
+    "url": "/Brihaspathi/static/js/1.a8d17f15.chunk.js"
   },
   {
     "revision": "00b0693ecc25f1b0e8f1",
@@ -24,20 +24,20 @@ self.__precacheManifest = [
     "url": "/Brihaspathi/static/media/fontawesome-webfont.b06871f2.ttf"
   },
   {
-    "revision": "a168d6eb4afb9c1072ea",
-    "url": "/Brihaspathi/static/js/3.a168d6eb.chunk.js"
+    "revision": "8a67396ce3b7c8bbeeba",
+    "url": "/Brihaspathi/static/js/3.8a67396c.chunk.js"
   },
   {
     "revision": "674f50d287a8c48dc19ba404d20fe713",
     "url": "/Brihaspathi/static/media/fontawesome-webfont.674f50d2.eot"
   },
   {
-    "revision": "aeaa6b4cb96d279222cc",
-    "url": "/Brihaspathi/static/js/main.aeaa6b4c.chunk.js"
+    "revision": "b735ecbbb677b88fe3ab",
+    "url": "/Brihaspathi/static/js/main.b735ecbb.chunk.js"
   },
   {
-    "revision": "ede10de9e4e163459f08",
-    "url": "/Brihaspathi/static/js/runtime~main.ede10de9.js"
+    "revision": "ea38172746ae4356ca7d",
+    "url": "/Brihaspathi/static/js/runtime~main.ea381727.js"
   },
   {
     "revision": "af7ae505a9eed503f8b8e6982036873e",
@@ -52,15 +52,15 @@ self.__precacheManifest = [
     "url": "/Brihaspathi/static/css/4.e67b9e56.chunk.css"
   },
   {
-    "revision": "a168d6eb4afb9c1072ea",
-    "url": "/Brihaspathi/static/css/3.5d18597b.chunk.css"
+    "revision": "8a67396ce3b7c8bbeeba",
+    "url": "/Brihaspathi/static/css/3.e858a290.chunk.css"
   },
   {
-    "revision": "db9ad6a62ff8cab815c3",
+    "revision": "a8d17f15fdb613154168",
     "url": "/Brihaspathi/static/css/1.a8756a8e.chunk.css"
   },
   {
-    "revision": "6e8fd1b63194764b848435f055919889",
+    "revision": "8472dbad62fb66f6c4f0723f02938953",
     "url": "/Brihaspathi/index.html"
   }
 ];
