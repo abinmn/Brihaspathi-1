@@ -14,11 +14,13 @@ import './TopNav.style.scss';
 const TopNav = () => {
   const [name, setName] = useState();
   useEffect(() => {
-    fetch(`http://13.233.133.214:8000/api/excel_id?excel_id=EX1`)
+    if(localStorage.getItem('excelId')){
+      fetch(`http://13.233.133.214:8000/api/excel_id?excel_id=${localStorage.getItem('excelId')}`)
     .then(res => res.json())
     .then(data => {
       setName(data[0].name);
     });
+    }
   }, []);
   return (
     
@@ -43,6 +45,11 @@ const TopNav = () => {
           <li className="nav-item">
             <Link to="/" className="nav-link">
               Dashboard
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/logout" className="nav-link">
+              logout
             </Link>
           </li>
         </ul>

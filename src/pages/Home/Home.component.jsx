@@ -13,7 +13,7 @@ const statuses = {
 };
 
 const Event = (props) => {
-  const { i, name, id, is_active, event_ended, prelims_submitted } = props;
+  const { i, name, id, is_active, event_ended, is_prelims_submitted } = props;
   let status = 'NotStarted';
   if (is_active) {
     status = 'Started';
@@ -21,7 +21,7 @@ const Event = (props) => {
   if (event_ended) {
     status = 'Finished';
   }
-  if(prelims_submitted){
+  if(is_prelims_submitted){
     status = 'Submitted';
   }
 
@@ -37,12 +37,12 @@ const Event = (props) => {
       }
       });
     
-    if(!(is_active === true && event_ended === false && prelims_submitted === false)){
+    if(!(is_active === true && event_ended === false && is_prelims_submitted === false)){
       alert("sorry");
     }
   }
   return (
-    <Link onClick={clickHand} to={(is_active === true && event_ended === false && prelims_submitted === false) ? `/prelims/${id}` : '/'}>
+    <Link onClick={clickHand} to={(is_active === true && event_ended === false && is_prelims_submitted === false) ? `/prelims/${id}` : '/'}>
       <div className="sub">
         <div className="dashHead d1">
           <h5>{i + 1}</h5>

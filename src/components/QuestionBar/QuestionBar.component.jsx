@@ -12,10 +12,10 @@ const Question = ({ n, event, id, current, answered }) => {
   if (id === parseInt(current)) {
     status = 'active-q';
   }
-
+  const colo = (status === 'bg-info' || status === 'active-q') ? 'text-white' : 'text-dark';
   return (
     <li className={`list-group-item ${status}`}>
-      <a href={`/prelims/${event}/${id}`}>{n}</a>
+      <a className={colo} href={`/prelims/${event}/${id}`}>{n}</a>
     </li>
   );
 };
