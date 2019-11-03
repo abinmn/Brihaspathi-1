@@ -23,3 +23,11 @@ export const setAnswer = (question, answer, event) => {
   };
   return post2(`/set-answer/${event}`, JSON.stringify(body));
 };
+
+export const rootUrl1 = `https://alfred-jhyf6iaxsq-an.a.run.app/admin/login/?next=/admin`;
+
+export const rootUrl2 = `https://brihaspati-jhyf6iaxsq-an.a.run.app/admin/login/?next=/admin`;
+
+/*export const rootUrl1 = `http://13.233.133.214:8000`;
+
+export const rootUrl2 = `http://13.233.133.214`;*/

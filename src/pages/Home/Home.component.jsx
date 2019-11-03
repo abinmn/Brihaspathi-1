@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { getEvents } from '../../config/api';
 import withLogin from '../../HOC/withLogin';
+import {rootUrl1} from '../../config/api';
 import './Home.style.scss';
 
 const statuses = {
@@ -26,7 +27,7 @@ const Event = (props) => {
   }
 
   const clickHand = () => {
-    fetch(`http://13.233.133.214:8000/api/events/${id}`)
+    fetch(`${rootUrl1}/api/events/${id}`)
     .then(res => res.json())
     .then(data => {
       if(window.localStorage.getItem(id) === null){

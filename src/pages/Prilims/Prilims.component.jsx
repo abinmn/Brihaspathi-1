@@ -3,12 +3,13 @@ import withLogin from '../../HOC/withLogin';
 import Question from '../../components/Question/Question.component';
 import QuestionBar from '../../components/QuestionBar/QuestionBar.component';
 import Timer from '../../components/timer/timer.component';
+import { rootUrl1 } from '../../config/api';
 
 const Prilims = props => {
   const clickHand = () => {
     props.history.push('/');
 
-    fetch(`http://13.233.133.214:8000/api/events/${props.match.params.event}/participants`, {
+    fetch(`${rootUrl1}/api/events/${props.match.params.event}/participants`, {
       method: 'PATCH',
       headers: { "Content-Type": "application/json; charset=utf-8" },
       body: JSON.stringify({

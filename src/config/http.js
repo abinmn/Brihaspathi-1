@@ -1,5 +1,7 @@
+import { rootUrl1, rootUrl2 } from './api';
+
 export const post1 = (url, data) => {
-  return fetch(`http://13.233.133.214:8000/api${url}`, {
+  return fetch(`${rootUrl1}/api${url}`, {
     method: 'POST',
     body: data,
   })
@@ -8,7 +10,7 @@ export const post1 = (url, data) => {
 };
 
 export const get1 = url => {
-  return fetch(`http://13.233.133.214:8000/api${url}`, {
+  return fetch(`${rootUrl1}/api${url}`, {
     mode: 'cors',
   })
     .then(res => {
@@ -19,7 +21,7 @@ export const get1 = url => {
 };
 
 export const post2 = (url, data) => {
-  return fetch(`http://13.233.133.214/api${url}`, {
+  return fetch(`${rootUrl2}/api${url}`, {
     method: 'POST',
     body: data,
   })
@@ -31,7 +33,7 @@ export const post2 = (url, data) => {
 };
 
 export const get2 = url => {
-  return fetch(`http://13.233.133.214/api${url}`, {
+  return fetch(`${rootUrl2}/api${url}`, {
     mode: 'cors',
   })
     .then(res => {
