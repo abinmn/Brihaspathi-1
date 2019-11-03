@@ -5,7 +5,6 @@ const withLogin = Component => {
   if (localStorage.getItem('excelId')) {
     return Component;
   }
-  alert('Not Logged in');
   return () => <Redirect to="/login" />;
 };
 
